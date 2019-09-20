@@ -1,0 +1,48 @@
+import java.util.Scanner; 
+public class BMI_Calculator {
+	public static void main(String [] args) {
+		Scanner scnr = new Scanner(System.in);
+	
+	double weight;
+	double height;
+	double BMI;
+	String underWeight = "Underweight (BMI = < 18.5)";
+	String normalWeight = "Normal weight (BMI = 18.5-24.9)";
+	String overWeight = "Over Weight (BMI = 25-29.9)";
+	String obesity = "Obesity (BMI >= 30)";
+    int option; 
+    
+    System.out.println("Input '1' if measurements are Imperical and '2' if measurements are Metric:");
+		option = scnr.nextInt();
+		if (option == 1 ) {
+			System.out.println("Input weight in Pounds:");
+				weight = scnr.nextDouble();
+			System.out.println("Input heigh in inches:");
+				height = scnr.nextDouble();
+			BMI = (703 * weight) / height;
+		System.out.printf("Your BMI is: %.1f\t", BMI);
+		if (BMI < 18.5) {
+			System.out.printf("According to the National Heart,Lung and Blood, you fall under the %s category \n", underWeight);
+		}
+		if ((BMI >= 18.5) || (BMI <= 24.9)) {
+			System.out.printf("According to the National Heart,Lung and Blood, you fall under the %s category \n", normalWeight);	
+			
+		}
+		if ((BMI >= 25) || (BMI <= 29.9)) {
+			System.out.printf("According to the National Heart,Lung and Blood, you fall under the %s category \n", overWeight);	
+			
+		}
+		if (BMI >= 30) {
+			System.out.printf("According to the National Heart,Lung and Blood, you fall under the %s category \n", obesity);	
+		}
+		}
+		if (otion == 2) {
+			
+			
+		}
+		else {
+			System.out.println("No option available");
+		}
+		
+}
+}

@@ -1,0 +1,13 @@
+import java.util.Scanner; 
+public class BMI_Calculator {
+	public static void main(String [] args) {
+		Scanner scnr = new Scanner(System.in);
+	
+	double weight;
+	double height;
+    int option; 
+    
+    System.out.println("Input '1' if measurements are in Imperical and '2' if measurements are in Metric");
+		
+}
+}

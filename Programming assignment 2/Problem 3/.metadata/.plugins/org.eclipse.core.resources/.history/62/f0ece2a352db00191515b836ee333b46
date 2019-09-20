@@ -1,0 +1,26 @@
+package donesVazquez_p3;
+
+import java.util.Scanner; 
+public class Polling_app {
+	public static void main(String [] args) {
+		Scanner scnr = new Scanner(System.in);
+	
+	/*
+	 * create 5 topics in an one dimensional array
+	 * create a 5 COl 10 ROW dimensional array corresponding to the five topic responses.
+	 *ask the user to rate each issue 
+	 * all this happening in a while loop that breaks when asked for
+	 * 
+	 * Results include:
+	 * tabular report with the results for the 10 inputs
+     * to the right of the table show average of ratings
+     * calculate the highest point total (display both the issue and the total of points
+     * calculate the lowest point total (display issue and point total	 
+	 *
+	 */
+		String[] topics = new String [5];
+		topics [0] = "Music";
+	System.out.println(topics [0]);
+	
+}
+}

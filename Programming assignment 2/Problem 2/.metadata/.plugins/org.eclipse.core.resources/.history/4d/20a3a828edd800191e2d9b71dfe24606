@@ -1,0 +1,27 @@
+import java.util.Scanner; 
+public class BMI_Calculator {
+	public static void main(String [] args) {
+		Scanner scnr = new Scanner(System.in);
+	
+	double weight;
+	double height;
+    int option; 
+    
+    System.out.println("Input '1' if measurements are Imperical and '2' if measurements are Metric:");
+		option = scnr.nextInt();
+		if (option == 1 ) {
+			System.out.println("Input weight in Pounds:");
+				weight = scnr.nextDouble();
+			System.out.println("Input heigh in inches:")
+			
+		}
+		if (otion == 2) {
+			
+			
+		}
+		else {
+			System.out.println("No option available");
+		}
+		
+}
+}
